@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -27,25 +27,25 @@
   </head>
   <body>
     <main class="hero">
-      <nav>
+      <nav class="d-f">
         <span class="logo"><img src="./images/logo.svg" alt="" /></span>
-        <ul class="nav-links">
-          <li>Features</li>
-          <li>Team</li>
-          <li>Sign In</li>
+        <ul class="nav-links d-f">
+          <li class="f-w-5">Features</li>
+          <li class="f-w-5">Team</li>
+          <li class="f-w-5">Sign In</li>
         </ul>
       </nav>
-      <div class="hero-main">
+      <div class="hero-main d-f">
         <div class="hero-text-area">
-          <h2 class="text-header">
+          <h2 class="text-header f-w-7">
             All your files in one secure location, accessible anywhere.
           </h2>
-          <p class="sub-text">
+          <p class="sub-text f-w-5">
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="">
+          <form class="d-g" action="">
             <input
               type="text"
               name="email"
@@ -62,17 +62,16 @@
         </div>
       </div>
     </main>
-    <div class="test"></div>
+    <div class="curved-divider"></div>
     <section class="about">
-      <!-- I stopped here -->
-      <main class="about-main">
+      <main class="about-main d-f">
         <div class="about-text-area">
-          <h2 class="text-header">Stay productive, wherever you are</h2>
-          <p class="sub-text">
+          <h2 class="text-header f-w-7">Stay productive, wherever you are</h2>
+          <p class="sub-text f-w-5">
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
           </p>
-          <p class="sub-text">
+          <p class="sub-text f-w-5">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required!
           </p>
@@ -83,17 +82,17 @@
             <span class="quote-icon"
               ><i class="fa-solid fa-quote-left"></i
             ></span>
-            <p class="testimoial-text">
+            <p class="testimoial-text f-w-5">
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
             </p>
-            <div class="testimonial-bio">
+            <div class="testimonial-bio d-f">
               <div class="testimonial-image">
                 <img src="./images/avatar-testimonial.jpg" alt="" />
               </div>
               <div class="testimonial-details">
-                <p class="testimonial-name">John Doe</p>
+                <p class="testimonial-name f-w-7">John Doe</p>
                 <p class="testimonial-position">Vice President</p>
               </div>
             </div>
@@ -103,7 +102,7 @@
           <img src="./images/illustration-2.svg" alt="" />
         </div>
       </main>
-      <aside class="about-aside">
+      <aside class="about-aside d-f">
         <div class="aside-text-area">
           <h2>Get early access today</h2>
           <p>
@@ -113,33 +112,35 @@
           </p>
         </div>
         <div class="aside-email-area">
-          <form action="">
+          <form class="d-g" action="">
             <input
               type="text"
               name="email"
-              id="email"
+              id="emailTwo"
               placeholder="Your Email Address"
             />
-            <p class="form-error">Please provide a valid email address</p>
-            <button class="email-button" type="submit">
+            <p class="form-error error-2">
+              Please provide a valid email address
+            </p>
+            <button class="email-button button-2" type="submit">
               Get Started For Free
             </button>
           </form>
         </div>
       </aside>
     </section>
-    <footer>
-      <div class="footer-logo">
+    <footer class="d-f">
+      <div class="footer-logo d-f">
         <img src="./images/logo - light.svg" alt="" />
       </div>
-      <div class="footer-components">
+      <div class="footer-components d-g">
         <div class="footer-details">
           <p>
             <i class="fa-solid fa-phone-volume"></i> Phone: +234 902 615 5739
           </p>
           <p><i class="fa-solid fa-envelope"></i>Mail: Fylo@example.com</p>
         </div>
-        <div class="footer-about">
+        <div class="footer-about d-g">
           <p>About Us</p>
           <p>Jobs</p>
           <p>Press</p>
@@ -150,38 +151,31 @@
           <p>Terms</p>
           <p>Privacy</p>
         </div>
-        <div class="footer-links">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+        <div class="footer-links d-f">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f d-f"></i>
+          </a>
+          <a href="https://twitter.com/JajaDavid8" target="_blank">
+            <i class="fa-brands fa-twitter d-f"></i>
+          </a>
+          <a class="f-w-7" href="#">
+            <i class="fa-brands fa-instagram d-f"></i>
+          </a>
         </div>
       </div>
     </footer>
     <div>
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="f-w-7"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a class="f-w-7" href="https://twitter.com/JajaDavid8">David Jaja</a>.
       </p>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
-
-<!-- font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif; -->
-
-<!-- Features Team Sign In All your files in one secure location, accessible
-    anywhere. Fylo stores your most important files in one secure location.
-    Access them wherever you need, share and collaborate with friends, family,
-    and co-workers. Get Started Stay productive, wherever you are Never let
-    location be an issue when accessing your files. Fylo has you covered for all
-    of your file storage needs. Securely share files and folders with friends,
-    family and colleagues for live collaboration. No email attachments required!
-    See how Fylo works Fylo has improved our team productivity by an order of
-    magnitude. Since making the switch our team has become a well-oiled
-    collaboration machine. Kyle Burton Founder & CEO, Huddle Get early access
-    today It only takes a minute to sign up and our free starter tier is
-    extremely generous. If you have any questions, our support team would be
-    happy to help you. Get Started For Free Phone: +1-543-123-4567
-    example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy -->
