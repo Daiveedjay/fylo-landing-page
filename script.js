@@ -11,15 +11,15 @@ emailButton.addEventListener("click", (e) => {
       email.value
     )
   ) {
-    email.classList.remove("border-error");
-    errP.classList.remove("form-error");
+    errP.classList.add("form-correct");
     return true;
   } else {
     email.classList.add("border-error");
-    errP.classList.add("hidden");
+    errP.classList.add("text-error");
+    errP.classList.remove("form-correct");
     setTimeout(() => {
       email.classList.remove("border-error");
-      errP.classList.remove("hidden");
+      errP.classList.remove("text-error");
     }, 3000);
     return false;
   }
