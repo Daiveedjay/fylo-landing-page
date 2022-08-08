@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
 
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
@@ -52,8 +53,9 @@
               id="email"
               placeholder="Your Email Address"
             />
-            <p class="form-error">Please provide a valid email address</p>
+
             <button class="email-button" type="submit">Notify Me</button>
+            <p class="form-error">Please provide a valid email address</p>
           </form>
         </div>
 
@@ -112,19 +114,20 @@
           </p>
         </div>
         <div class="aside-email-area">
-          <form class="d-g" action="">
+          <form class="d-g">
             <input
-              type="text"
               name="email"
               id="emailTwo"
+              class="email-input"
+              type="text"
               placeholder="Your Email Address"
             />
-            <p class="form-error error-2">
-              Please provide a valid email address
-            </p>
             <button class="email-button button-2" type="submit">
               Get Started For Free
             </button>
+            <p class="form-error error-2">
+              Please provide a valid email address
+            </p>
           </form>
         </div>
       </aside>
