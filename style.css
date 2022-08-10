@@ -35,6 +35,11 @@ body {
 .f-w-7 {
   font-weight: 700;
 }
+
+/* .max-width {
+  max-width: 140rem;
+  margin: 0 auto;
+} */
 .hero {
   min-height: 20vh;
   margin-bottom: 6rem;
@@ -130,7 +135,7 @@ nav {
 
 /* HERO FORM STYLING */
 form {
-  width: 80%;
+  /* width: 80%; */
   /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
@@ -162,25 +167,20 @@ input:focus {
   background: hsl(224, 83%, 68%);
 }
 
-.form-error {
-  /* grid-column: 1 / span 2;
-  grid-row: 2 / span 1; */
-  /* color: transparent; */
+.hero-main .form-error {
   position: absolute;
   bottom: -2rem;
   left: 1rem;
+  color: transparent;
 }
 
 .form-correct {
-  display: none;
+  /* display: none; */
+  color: transparent;
 }
 
 .text-error {
-  color: red;
-}
-
-.hidden-light {
-  color: rgb(255, 255, 255);
+  color: red !important;
 }
 
 .border-error {
@@ -328,7 +328,9 @@ input:focus {
 
 .aside-email-area form {
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 0.25fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  position: relative;
 }
 
 .aside-email-area form input {
@@ -337,12 +339,15 @@ input:focus {
 }
 
 .aside-email-area form p {
-  grid-column: 1 / span 3;
+  position: absolute;
+  bottom: 4.25rem;
+  left: 1rem;
+  color: #fff;
+  color: transparent;
 }
 
 .aside-email-area form button {
   grid-column: 1 / span 2;
-  grid-row: 3 / span 1;
   border-radius: 0.5rem;
   font-size: 1.2rem;
 }

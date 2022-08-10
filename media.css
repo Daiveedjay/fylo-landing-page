@@ -110,13 +110,13 @@
   }
 
   .hero-text-area .form-error {
-    grid-column: 1 / span 3;
+    /* grid-column: 1 / span 3; */
     font-size: 1rem;
     font-size: 0.95rem;
   }
   .aside-email-area form {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 0.25fr 1fr;
+    /* grid-template-rows: 1fr 0.25fr 1fr; */
     width: 92.5%;
   }
   input[type="text"] {
@@ -169,7 +169,8 @@
     font-size: 1.4rem;
   }
   .hero-text-area form {
-    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
   }
   .hero-text-area form input {
     padding: 1rem 2rem;
@@ -180,6 +181,10 @@
 
   .hero-text-area .email-button {
     grid-column: 1 / span 3;
+  }
+
+  .hero-text-area .form-error {
+    bottom: 4.2rem;
   }
 
   .curved-divider {
@@ -273,6 +278,9 @@
   nav {
     padding: 2rem 1rem;
   }
+  .logo img {
+    width: 50%;
+  }
 
   .hero-main {
     padding: 2rem;
@@ -289,6 +297,7 @@
   }
   .hero-text-area .form-error {
     font-size: 1.2rem;
+    bottom: 4.7rem;
   }
   .aside-email-area form input {
     padding: 1.5rem 2rem;

@@ -16,11 +16,10 @@ emailButton.addEventListener("click", (e) => {
   } else {
     email.classList.add("border-error");
     errP.classList.add("text-error");
-    errP.classList.remove("form-correct");
     setTimeout(() => {
       email.classList.remove("border-error");
       errP.classList.remove("text-error");
-    }, 3000);
+    }, 2000);
     return false;
   }
 });
@@ -37,16 +36,16 @@ emailButtonTwo.addEventListener("click", (e) => {
       email.value
     )
   ) {
-    emailTwo.classList.remove("border-error");
-    errPTwo.classList.remove("form-error");
+    emailTwo.classList.add("form-correct");
     return true;
   } else {
     emailTwo.classList.add("border-error");
-    errPTwo.classList.add("hidden-light");
+    errPTwo.classList.add("text-error");
+    // errPTwo.classList.add("form-correct");
     setTimeout(() => {
       emailTwo.classList.remove("border-error");
-      errPTwo.classList.remove("hidden-light");
-    }, 3000);
+      errPTwo.classList.remove("text-error");
+    }, 2000);
     return false;
   }
 });
